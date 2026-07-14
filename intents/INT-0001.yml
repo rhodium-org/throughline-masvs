@@ -1,0 +1,11 @@
+uid: INT-0001
+type: intent
+status: approved
+title: A mobile application's security is verifiable against a consistent baseline
+text: The OWASP Mobile Application Security Verification Standard exists so that a mobile
+  app's security controls can be verified against a normative, consistent baseline —
+  giving mobile architects, developers and testers a shared reference for what a secure
+  mobile app must do, rather than ad-hoc judgement.
+normative: false
+attrs:
+  source_ref: "MASVS 2.1.0"

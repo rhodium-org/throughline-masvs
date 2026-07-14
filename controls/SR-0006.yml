@@ -1,0 +1,14 @@
+uid: SR-0006
+type: system_requirement
+status: approved
+title: Performs local authentication securely according to the platform best practices
+text: The app performs local authentication securely according to the platform best
+  practices.
+rationale: Many apps allow users to authenticate via biometrics or a local PIN code.
+  These authentication mechanisms need to be correctly implemented. Additionally,
+  some apps might not have a remote endpoint, and rely fully on local app authentication.
+links:
+- target: UR-0003
+  type: implements
+attrs:
+  source_ref: MASVS-AUTH-2

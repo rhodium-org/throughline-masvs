@@ -1,0 +1,13 @@
+uid: SR-0007
+type: system_requirement
+status: approved
+title: Secures sensitive operations with additional authentication
+text: The app secures sensitive operations with additional authentication.
+rationale: Some additional form of authentication is often desirable for sensitive
+  actions inside the app. This can be done in different ways (biometric, pin, MFA
+  code generator, email, deep links, etc) and they all need to be implemented securely.
+links:
+- target: UR-0003
+  type: implements
+attrs:
+  source_ref: MASVS-AUTH-3

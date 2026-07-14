@@ -1,0 +1,14 @@
+uid: SR-0010
+type: system_requirement
+status: approved
+title: Uses IPC mechanisms securely
+text: The app uses IPC mechanisms securely.
+rationale: Apps typically use platform provided IPC mechanisms to intentionally expose
+  data or functionality. Both installed apps and the user are able to interact with
+  the app in many different ways. This control ensures that all interactions involving
+  IPC mechanisms happen securely.
+links:
+- target: UR-0005
+  type: implements
+attrs:
+  source_ref: MASVS-PLATFORM-1

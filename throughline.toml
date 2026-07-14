@@ -1,0 +1,57 @@
+[project]
+name = "OWASP MASVS (throughline source)"
+format_version = 2
+
+# A throughline *source*: a standalone graph a consuming project composes via
+# throughline-compose, importing it under a namespace (e.g. `masvs`) and referencing
+# controls as `masvs:SR-0001`. The UIDs here are this source's own and immutable; the
+# published MASVS id (e.g. `MASVS-STORAGE-1`) lives in `attrs.source_ref`, never in the UID.
+#
+# Edition handling: MASVS v2 dropped the old L1/L2/R verification levels and externalised
+# the detailed tests to the MASTG, so it is now two levels deep — 8 categories, 24
+# high-level controls. This is the mobile sibling of ASVS; unlike ASVS (whose v4 -> v5 was a
+# full renumber handled as release branches), MASVS v1 is retired, so this source carries
+# only v2 on main. A minor revision (v2.0.0 -> v2.1.0) is additive and stays on one graph; a
+# future full restructure would become a release branch, the way ASVS does.
+
+[grounding]
+root_types = ["intent"]
+delivery_roots = ["intent"]
+ground_link_types = ["derives_from", "implements"]
+ai_origins = ["ai", "hybrid"]
+
+# Categories (MASVS-STORAGE .. MASVS-PRIVACY) are user_requirements grouping the standard;
+# each control is a system_requirement implementing its category.
+[types.user_requirement]
+attrs.source_ref = { required = true }
+
+[types.system_requirement]
+attrs.source_ref = { required = true }
+
+[links]
+types = ["derives_from", "implements", "relates"]
+
+[link_rules]
+derives_from = { from = ["user_requirement"], to = ["intent"] }
+implements   = { from = ["system_requirement"], to = ["user_requirement"] }
+
+[status]
+values = ["proposed", "draft", "deferred", "approved", "ratified", "implemented",
+          "verified", "suspect", "rejected", "deleted"]
+
+[transitions]
+proposed    = ["draft", "approved", "ratified", "deferred", "rejected", "deleted"]
+draft       = ["approved", "deferred", "rejected", "deleted"]
+deferred    = ["draft", "approved", "rejected", "deleted"]
+approved    = ["ratified", "implemented", "deferred", "suspect", "rejected", "deleted"]
+ratified    = ["implemented", "suspect", "rejected", "deleted"]
+implemented = ["verified", "suspect", "rejected", "deleted"]
+verified    = ["implemented", "suspect", "deleted"]
+suspect     = ["approved", "ratified", "implemented", "verified", "rejected", "deleted"]
+rejected    = ["draft", "deleted"]
+
+# `tl docs` regenerates docs/spec.md from the graph; `tl docs --check` gates it.
+# This activates the `unpublished` rule: every live normative item must be
+# referenced by a published document or `tl check --strict` fails.
+[docs]
+paths = ["docs/*.md", "README.md"]

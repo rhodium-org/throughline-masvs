@@ -1,0 +1,15 @@
+uid: SR-0023
+type: system_requirement
+status: approved
+title: Is transparent about data collection and usage
+text: The app is transparent about data collection and usage.
+rationale: Users have the right to know how their data is being used. This control
+  ensures that apps provide clear information about data collection, storage, and
+  sharing practices, including any behavior a user wouldn't reasonably expect, such
+  as background data collection. Apps should also adhere to platform guidelines on
+  data declarations.
+links:
+- target: UR-0008
+  type: implements
+attrs:
+  source_ref: MASVS-PRIVACY-3

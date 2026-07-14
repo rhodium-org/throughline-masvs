@@ -1,0 +1,13 @@
+uid: SR-0004
+type: system_requirement
+status: approved
+title: Performs key management according to industry best practices
+text: The app performs key management according to industry best practices.
+rationale: Even the strongest cryptography would be compromised by poor key management.
+  This control covers the management of cryptographic keys throughout their lifecycle,
+  including key generation, storage and protection.
+links:
+- target: UR-0002
+  type: implements
+attrs:
+  source_ref: MASVS-CRYPTO-2
