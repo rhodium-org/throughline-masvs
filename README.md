@@ -3,7 +3,7 @@
 The **OWASP Mobile Application Security Verification Standard (MASVS)** expressed as a
 [throughline](https://pypi.org/project/throughline/) **source** — a standalone,
 grounded requirements graph that a consuming project composes with
-[throughline-compose](https://github.com/rhodium-org/throughline-compose).
+[throughline-compose](https://github.com/timebacksolutions/throughline-compose).
 
 This repository holds no code. It is a directory of small YAML items with permanent
 UIDs, validated by `tl check`. Consumers import it under a namespace and reference
