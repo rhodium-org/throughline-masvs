@@ -1,4 +1,4 @@
-# standard-masvs
+# throughline-masvs
 
 The **OWASP Mobile Application Security Verification Standard (MASVS)** expressed as a
 [throughline](https://pypi.org/project/throughline/) **source** — a standalone,
@@ -36,7 +36,7 @@ UID↔id mapping and only allocates UIDs for ids that have none yet.
 MASVS **v2** deliberately removed the old L1/L2/R verification levels and moved the
 detailed, testable procedures out to the **MASTG** (Mobile Application Security Testing
 Guide). MASVS is now the control layer only — 8 categories, 24 high-level controls — so,
-unlike `standard-asvs`, there is **no `attrs.level`**. A consumer that needs concrete
+unlike `throughline-asvs`, there is **no `attrs.level`**. A consumer that needs concrete
 tests composes the MASTG separately.
 
 ## Editions
@@ -44,7 +44,7 @@ tests composes the MASTG separately.
 MASVS v1 is retired; this source carries **v2 only** on `main`. A minor revision
 (v2.0.0 → v2.1.0) is additive and stays on one graph. Were OWASP to publish a full
 restructure, it would become a release branch + tag, the way
-[`standard-asvs`](https://github.com/rhodium-org/standard-asvs) handles v4 → v5.
+[`throughline-asvs`](https://github.com/timebacksolutions/throughline-asvs) handles v4 → v5.
 
 ## Modelling conventions
 
@@ -62,11 +62,11 @@ In a consuming throughline project's `throughline.toml`:
 ```toml
 [[sources]]
 namespace = "masvs"
-url = "https://github.com/rhodium-org/standard-masvs"
+url = "https://github.com/timebacksolutions/throughline-masvs"
 ref = "v2.1.0"
 ```
 
-(For local side-by-side development you can use `path = "vendor/standard-masvs"`
+(For local side-by-side development you can use `path = "vendor/throughline-masvs"`
 instead of `url`/`ref`.)
 
 Then reference a control from your own items:
