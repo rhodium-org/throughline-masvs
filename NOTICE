@@ -8,7 +8,7 @@ full terms.
 
 This repository is a throughline *source*: a requirements graph, not a program. It
 re-expresses the OWASP Mobile Application Security Verification Standard (MASVS) as a
-grounded IDD graph so consuming projects can compose it with throughline-compose.
+grounded IDD graph so consuming projects can compose it with throughline.
 
 The MASVS itself is published by the OWASP Foundation under CC BY-SA 4.0. The
 requirement text reproduced here in items' `text`/`rationale`/`attrs.source_ref` is
