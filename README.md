@@ -90,7 +90,8 @@ tl docs --check       # docs/spec.md must match the graph
 
 ## Provenance
 
-MASVS is © the OWASP Foundation, licensed CC BY-SA 4.0. See [NOTICE](NOTICE) and
-https://github.com/OWASP/masvs. This repository is Apache-2.0 for its structure and
-tooling; the reproduced requirement text remains OWASP's, redistributed under the same
-CC BY-SA 4.0 terms.
+MASVS is © the OWASP Foundation, licensed CC BY-SA 4.0. This repository's structure,
+tooling and configuration are Apache-2.0 (see `LICENSE`); the MASVS control text
+reproduced here stays under **CC BY-SA 4.0**, with attribution to the OWASP Foundation, and
+has been restructured as a throughline graph. See [NOTICE](NOTICE). Authoritative source:
+https://github.com/OWASP/masvs.

@@ -3,16 +3,32 @@ Copyright 2026 Henry J Grech-Cini
 
 This product includes work developed by Dr Henry J Grech-Cini.
 
-Licensed under the Apache License, Version 2.0. See the LICENSE file for the
-full terms.
+The repository's structure, tooling and configuration are licensed under the Apache
+License, Version 2.0. See the LICENSE file for the full terms. That licence does not cover
+the OWASP content described below.
 
 This repository is a throughline *source*: a requirements graph, not a program. It
 re-expresses the OWASP Mobile Application Security Verification Standard (MASVS) as a
 grounded IDD graph so consuming projects can compose it with throughline.
 
-The MASVS itself is published by the OWASP Foundation under CC BY-SA 4.0. The
-requirement text reproduced here in items' `text`/`rationale`/`attrs.source_ref` is
-derived from MASVS and remains the work of the OWASP Foundation and its contributors;
-this repository claims no ownership over that content and reproduces it, under the same
-CC BY-SA 4.0 terms, for interoperability. See https://github.com/OWASP/masvs for the
-authoritative source.
+The MASVS control text reproduced here (items' `text`/`rationale`/`attrs.source_ref`) is taken from:
+
+  - OWASP Mobile Application Security Verification Standard (MASVS) — https://github.com/OWASP/masvs
+
+That content is © the OWASP Foundation and its contributors and is used under the
+Creative Commons Attribution-ShareAlike 4.0 International licence
+(CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/). Under ShareAlike, the
+MASVS-derived content in this repository is likewise made available under CC BY-SA 4.0,
+with attribution to the OWASP Foundation.
+
+Changes: the MASVS has been restructured as a throughline graph. Each control is a
+separate item with a UID of this repository's own, grouped under the MASVS's categories and
+linked to them; the published MASVS reference of each control is kept in
+`attrs.source_ref`. Any change to the wording of a control is recorded in this
+repository's history.
+
+This project's own additions — the graph structure, UID allocation, generator and
+configuration — are covered by the Apache-2.0 licence above and are clearly additional to
+the OWASP content. The OWASP Foundation does not endorse this project.
+
+See https://github.com/OWASP/masvs for the authoritative source.
