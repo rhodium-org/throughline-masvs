@@ -1,6 +1,6 @@
 [project]
 name = "OWASP MASVS (throughline source)"
-format_version = 3
+format_version = 4
 
 # A throughline *source*: a standalone graph a consuming project composes with `tl`,
 # importing it under a namespace (e.g. `masvs`) and referencing
