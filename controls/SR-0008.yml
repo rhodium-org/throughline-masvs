@@ -1,6 +1,6 @@
 uid: SR-0008
 type: system_requirement
-status: approved
+status: proposed
 title: Secures all network traffic according to the current best practices
 text: The app secures all network traffic according to the current best practices.
 rationale: Ensuring data privacy and integrity of any data in transit is critical
@@ -9,6 +9,7 @@ rationale: Ensuring data privacy and integrity of any data in transit is critica
   ways for a developer to disable the platform secure defaults, or bypass them completely
   by using low-level APIs or third-party libraries. This control ensures that the
   app is in fact setting up secure connections in any situation.
+normative: true
 links:
 - target: UR-0004
   type: implements

@@ -1,6 +1,6 @@
 uid: SR-0020
 type: system_requirement
-status: approved
+status: proposed
 title: Implements anti-dynamic analysis techniques
 text: The app implements anti-dynamic analysis techniques.
 rationale: Sometimes pure static analysis is very difficult and time consuming so
@@ -9,6 +9,7 @@ rationale: Sometimes pure static analysis is very difficult and time consuming s
   aims to make it as difficult as possible to perform dynamic analysis, as well as
   prevent dynamic instrumentation which could allow an attacker to modify the code
   at runtime.
+normative: true
 links:
 - target: UR-0007
   type: implements

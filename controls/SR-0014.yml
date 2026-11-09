@@ -1,11 +1,12 @@
 uid: SR-0014
 type: system_requirement
-status: approved
+status: proposed
 title: Has a mechanism for enforcing app updates
 text: The app has a mechanism for enforcing app updates.
 rationale: Sometimes critical vulnerabilities are discovered in the app when it is
-  already in production. This control ensures that there is a mechanism to force the
-  users to update the app before they can continue using it.
+  already in production. This control ensures that there is a mechanism to force
+  the users to update the app before they can continue using it.
+normative: true
 links:
 - target: UR-0006
   type: implements

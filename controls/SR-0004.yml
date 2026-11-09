@@ -1,11 +1,12 @@
 uid: SR-0004
 type: system_requirement
-status: approved
+status: proposed
 title: Performs key management according to industry best practices
 text: The app performs key management according to industry best practices.
 rationale: Even the strongest cryptography would be compromised by poor key management.
   This control covers the management of cryptographic keys throughout their lifecycle,
   including key generation, storage and protection.
+normative: true
 links:
 - target: UR-0002
   type: implements

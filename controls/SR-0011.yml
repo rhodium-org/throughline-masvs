@@ -1,12 +1,13 @@
 uid: SR-0011
 type: system_requirement
-status: approved
+status: proposed
 title: Uses WebViews securely
 text: The app uses WebViews securely.
 rationale: WebViews are typically used by apps that have a need for increased control
   over the UI. This control ensures that WebViews are configured securely to prevent
   sensitive data leakage as well as sensitive functionality exposure (e.g. via JavaScript
   bridges to native code).
+normative: true
 links:
 - target: UR-0005
   type: implements

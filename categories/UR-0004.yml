@@ -1,6 +1,6 @@
 uid: UR-0004
 type: user_requirement
-status: approved
+status: proposed
 title: MASVS-NETWORK Network Communication
 text: Secure networking is a critical aspect of mobile app security, particularly
   for apps that communicate over the network. In order to ensure the confidentiality
@@ -14,6 +14,7 @@ text: Secure networking is a critical aspect of mobile app security, particularl
   covers situations where a developer may choose to trust only specific Certificate
   Authorities (CAs), which is commonly referred to as certificate pinning or public
   key pinning.
+normative: true
 links:
 - target: INT-0001
   type: derives_from

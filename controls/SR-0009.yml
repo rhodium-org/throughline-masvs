@@ -1,12 +1,13 @@
 uid: SR-0009
 type: system_requirement
-status: approved
+status: proposed
 title: Performs identity pinning for all remote endpoints under the developer's control
 text: The app performs identity pinning for all remote endpoints under the developer's
   control.
 rationale: Instead of trusting all the default root CAs of the framework or device,
   this control will make sure that only very specific CAs are trusted. This practice
   is typically called certificate pinning or public key pinning.
+normative: true
 links:
 - target: UR-0004
   type: implements

@@ -1,6 +1,6 @@
 uid: SR-0003
 type: system_requirement
-status: approved
+status: proposed
 title: Employs current strong cryptography and uses it according to industry best
   practices
 text: The app employs current strong cryptography and uses it according to industry
@@ -9,6 +9,7 @@ rationale: Cryptography plays an especially important role in securing the user'
   data - even more so in a mobile environment, where attackers having physical access
   to the user's device is a likely scenario. This control covers general cryptography
   best practices, which are typically defined in external standards.
+normative: true
 links:
 - target: UR-0002
   type: implements

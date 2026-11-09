@@ -1,6 +1,6 @@
 uid: SR-0022
 type: system_requirement
-status: approved
+status: proposed
 title: Prevents identification of the user
 text: The app prevents identification of the user.
 rationale: Protecting user identity is crucial. This control emphasizes the use of
@@ -11,6 +11,7 @@ rationale: Protecting user identity is crucial. This control emphasizes the use 
   For instance, a fingerprint used for fraud detection should be isolated and not
   repurposed for audience measurement in an analytics SDK. This ensures that each
   data stream serves its intended function without risking user privacy.
+normative: true
 links:
 - target: UR-0008
   type: implements
