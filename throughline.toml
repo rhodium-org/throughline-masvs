@@ -78,3 +78,9 @@ ratified = "ratified"
 invalidated = "rejected"
 suspect = "suspect"
 tombstone = "deleted"
+
+[rules]
+# This graph is published unsigned: its items are offered as they stand and are
+# not ratified by a named person, so the gate does not ask for signatures here
+# (the rule `unratified`). Every other rule stays on.
+unratified = "off"
